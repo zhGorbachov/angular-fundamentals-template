@@ -8,13 +8,14 @@ import { AppLoader } from '@app/loader/loader.component';
 import {CoursesModule} from "@features/courses/courses.module";
 import {CoursesListModule} from "@features/courses/courses-list/courses-list.module";
 import {CourseInfoModule} from "@features/course-info/course-info.module";
+import {AppRoutingModule} from "@app/app-routing-module";
 
 @NgModule({
   declarations: [
     AppComponent, AppLoader
   ],
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, CoursesModule, CoursesListModule, CourseInfoModule
+    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, CoursesModule, CoursesListModule, CourseInfoModule, AppRoutingModule
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]

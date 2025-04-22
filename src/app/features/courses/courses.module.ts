@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoursesComponent } from './courses.component';
-
-
+import { CoursesRoutingModule } from './courses-routing.module';
+import { CoursesPageComponent } from './pages/courses-page/courses-page.component';
+import { CourseAddPageComponent } from './pages/course-add-page/course-add-page.component';
+import { CourseEditPageComponent } from './pages/course-edit-page/course-edit-page.component';
+import { CourseInfoPageComponent } from './pages/course-info-page/course-info-page.component';
 
 @NgModule({
   declarations: [
-    CoursesComponent
+    CoursesPageComponent,
+    CourseAddPageComponent,
+    CourseEditPageComponent,
+    CourseInfoPageComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CoursesRoutingModule
   ]
 })
-export class CoursesModule { }
+export class CoursesModule {}
